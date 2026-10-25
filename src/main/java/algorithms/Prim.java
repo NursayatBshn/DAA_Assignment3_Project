@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
 
 public class Prim {
     
-    public static MSTResult findMst(Graph graph) {
+    public static MSTResult findMST(Graph graph) {
         int n = graph.getV();
         boolean[] inMST = new boolean[n];
         List<Edge> mstEdges = new ArrayList<>();

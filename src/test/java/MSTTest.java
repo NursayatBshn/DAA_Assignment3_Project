@@ -15,7 +15,7 @@ public class MSTTest {
     void testDisconnectGraphForest() throws IOException {
         Graph g = Graph.fromFile("data/graph_disconnected.txt");
         MSTResult kruskalRes = Kruskal.findMST(g);
-        MSTResult primRes = Prim.findMst(g);
+        MSTResult primRes = Prim.findMST(g);
 
         assertEquals(kruskalRes.totalWeight, primRes.totalWeight, "Все остовного леса должны совпадать");
         assertEquals(2, kruskalRes.componentCount, "В graph_disconnected ровно 2 коспоненты связности");
@@ -47,7 +47,7 @@ public class MSTTest {
             }
 
             MSTResult kruskalRes = Kruskal.findMST(g);
-            MSTResult primRes = Prim.findMst(g);
+            MSTResult primRes = Prim.findMST(g);
 
             assertEquals(kruskalRes.totalWeight, primRes.totalWeight, "Веса MST Kruskal и Prim должны строго совпадать");
             assertEquals(n - 1, kruskalRes.edges.size());

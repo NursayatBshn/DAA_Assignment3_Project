@@ -1,7 +1,6 @@
 package benchmark;
 
 import algorithms.*;
-import graph.Edge;
 import graph.Graph;
 
 import java.io.File;

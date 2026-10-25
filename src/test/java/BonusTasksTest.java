@@ -1,5 +1,4 @@
 import algorithms.*;
-import benchmark.GraphGenerator;
 import graph.Graph;
 import org.junit.jupiter.api.Test;
 
